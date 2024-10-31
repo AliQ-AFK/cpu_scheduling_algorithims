@@ -72,4 +72,5 @@ void preemptive_priority(t_process *processes, unsigned int count)
     printf("The average wait time is: %.3f\n", (float)total_wait / count);
     printf("The CPU utilization is: %.3f\n", (float)total_burst / time);
     printf("The throughput is: %.3f processes per second\n", (float)count / time);
+    printf("|---------|-----|--------------|------------|-----------------|--------------|-----------------|\n");
 }

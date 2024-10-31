@@ -3,6 +3,7 @@
 
 void multi_level_queue_scheduling(t_process *processes, unsigned int count)
 {
+    printf("/nusing mulitilevel queue:/n");
     const unsigned int max_priority_levels = 4;
     for (unsigned int level = 0; level < max_priority_levels; level++)
     {
