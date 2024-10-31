@@ -54,4 +54,5 @@ void sjf(t_process *processes, unsigned int count)
     printf("The average wait time is: %.3f\n", (float)total_wait / count);
     printf("The CPU utilization is: %.3f\n", (float)total_burst / completion_time);
     printf("The throughput is: %.3f processes per second\n",(float) count / completion_time );
-     printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
+}
