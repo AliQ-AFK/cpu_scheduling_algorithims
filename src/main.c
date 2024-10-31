@@ -7,7 +7,12 @@ int main(int argc, char *argv[])
 
     if(argc ==2)
     {
-        unsigned int    count = atoi(argv[1]);   
+        unsigned int    count = atoi(argv[1]);
+        if(count <= 0)
+        {
+            fprintf(stderr, "please input a positive integer\n");
+            return(EXIT_FAILURE);
+        }
         t_process* processes = malloc(count * sizeof(t_process));
 
         if (processes == NULL)
