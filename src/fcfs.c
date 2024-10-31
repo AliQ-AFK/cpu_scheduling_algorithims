@@ -36,7 +36,7 @@ void    fcfs(t_process *processes, unsigned int count)
             processes[i].burst_time, processes[i].turnaround_time,
             processes[i].waiting_time, processes[i].completion_time);
     }
-    printf("|---------|-----|--------------|------------|-----------------|--------------|-----------------|\n");
+    printf("|---------|-----|--------------|------------|-----------------|--------------|----------------|\n");
     printf("\nThe average turnaround time is: %.3f\n", (float)total_turnaround / count);
     printf("The average wait time is: %.3f\n", (float)total_wait / count);
     printf("The CPU utilization is: %.3f\n", (float)total_burst / completion_time);

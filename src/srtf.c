@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
-void srtf(t_process *processes, unsigned int count) {
+void srtf(t_process *processes, unsigned int count)
+{
     unsigned int    remaining_time[count];
     unsigned int    total_turnaround = 0;
     unsigned int    total_wait = 0;
@@ -70,10 +71,10 @@ void srtf(t_process *processes, unsigned int count) {
                processes[i].burst_time, processes[i].turnaround_time,
                processes[i].waiting_time, processes[i].completion_time);
     }
-    printf("|---------|-----|--------------|------------|-----------------|--------------|-----------------|\n");
+    printf("|---------|-----|--------------|------------|-----------------|--------------|----------------|\n");
     printf("\nThe average turnaround time is: %.3f\n", (float)total_turnaround / count);
     printf("The average wait time is: %.3f\n", (float)total_wait / count);
     printf("The CPU utilization is: %.3f\n", (float)total_burst / time);
     printf("The throughput is: %.3f processes per second\n", (float)count / time);
-     printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
 }
