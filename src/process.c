@@ -35,6 +35,6 @@ void    generate_processes(t_process *processes, unsigned int count)
             processes[i].burst_time,
             processes[i].priority);
     }
-    printf("|---------|-----|--------------|------------|\n\n");
+    printf("|---------|-----|--------------|------------|----------|\n");
 }
 
