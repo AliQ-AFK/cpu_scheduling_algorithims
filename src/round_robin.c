@@ -63,6 +63,6 @@ void round_robin(t_process *processes, unsigned int count)
     printf("\nThe average turnaround time is: %.3f\n", (float)total_turnaround / count);
     printf("The average wait time is: %.3f\n", (float)total_wait / count);
     printf("The CPU utilization is: %.3f\n", (float)total_burst / time);
-    printf("The throughput is: %.3f processes per second\n", (float)count / time);
+    printf("The throughput is: %.3f processes per millisecond\n", (float)count / time);
     printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
 }
