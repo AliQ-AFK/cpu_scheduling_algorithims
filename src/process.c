@@ -23,16 +23,17 @@ void    generate_processes(t_process *processes, unsigned int count)
     }
 
     printf("Generated Processes:\n");
-    printf("| Process | PID | Arrival Time | Burst Time |\n");
-    printf("|---------|-----|--------------|------------|\n");
+    printf("| Process | PID | Arrival Time | Burst Time | priority |\n");
+    printf("|---------|-----|--------------|------------|----------|\n");
 
     for (unsigned int i = 0; i < count; i++) 
     {
-        printf("| %7d | %3d | %12d | %10d |\n", 
+        printf("| %7d | %3d | %12d | %10d | %8d | \n", 
             i + 1, 
             processes[i].pid,
             processes[i].arrival_time,
-            processes[i].burst_time);
+            processes[i].burst_time,
+            processes[i].priority);
     }
     printf("|---------|-----|--------------|------------|\n\n");
 }
