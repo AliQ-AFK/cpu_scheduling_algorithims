@@ -26,6 +26,7 @@ cpu_scheduling_algorithms/
 │   ├── sjf.c
 │   └── srtf.c
 ├── utils.h
+├── makefile
 └── README.md
 ```
 
@@ -181,13 +182,13 @@ make clean
 To run the program, use the following command with command-line arguments specifying the number of processes. The program expects only positive integer arguments:
 
 ```bash
-./scheduling <number_of_processes>
+./cpu_scheduling <number_of_processes>
 ```
 
 Example:
 
 ```bash
-./scheduling 5
+./cpu_scheduling 5
 ```
 
 > **Note:** Only positive integers should be used for process numbers. Non-positive integers or non-integer inputs will result in an error.
