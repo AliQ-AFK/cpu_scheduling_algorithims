@@ -27,6 +27,7 @@ cpu_scheduling_algorithms/
 │   └── srtf.c
 ├── utils.h
 ├── makefile
+├── Report.pdf
 └── README.md
 ```
 
