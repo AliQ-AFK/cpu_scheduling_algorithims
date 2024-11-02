@@ -22,13 +22,13 @@ void    generate_processes(t_process *processes, unsigned int count)
         processes[i].waiting_time = 0;
     }
 
-    printf("Generated Processes:\n");
-    printf("| Process | PID | Arrival Time | Burst Time | priority |\n");
+    printf("\033[1;34mGenerated Processes:\033[0m\n");
+    printf("\033[1;34m| Process | PID | Arrival Time | Burst Time | Priority |\033[0m\n");
     printf("|---------|-----|--------------|------------|----------|\n");
 
     for (unsigned int i = 0; i < count; i++) 
     {
-        printf("| %7d | %3d | %12d | %10d | %8d | \n", 
+        printf("| \033[0;36m%7d\033[0m | \033[0;36m%3d\033[0m | \033[0;36m%12d\033[0m | \033[0;36m%10d\033[0m | \033[0;36m%8d\033[0m |\n", 
             i + 1, 
             processes[i].pid,
             processes[i].arrival_time,
@@ -37,4 +37,3 @@ void    generate_processes(t_process *processes, unsigned int count)
     }
     printf("|---------|-----|--------------|------------|----------|\n");
 }
-

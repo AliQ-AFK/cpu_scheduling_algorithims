@@ -59,22 +59,23 @@ void srtf(t_process *processes, unsigned int count)
         time++;
     }
 
-    // Print results
-    printf("Using Shortest Remaining Time First, Preemptive:\n");
-    printf("| Process | PID | Arrival Time | Burst Time | Turnaround Time | Waiting Time | Completion Time |\n");
+    printf("\033[1;34mUsing Shortest Remaining Time First, Preemptive:\033[0m\n");
+    printf("\033[1;34m| Process | PID | Arrival Time | Burst Time | Turnaround Time | Waiting Time | Completion Time |\033[0m\n");
     printf("|---------|-----|--------------|------------|-----------------|--------------|-----------------|\n");
+    
     for (unsigned int i = 0; i < count; i++)
     {
-        printf("| %7d | %3d | %12d | %10d | %15d | %12d | %15d |\n",
+        printf("| \033[0;36m%7d\033[0m | \033[0;36m%3d\033[0m | \033[0;36m%12d\033[0m | \033[0;36m%10d\033[0m | \033[0;36m%15d\033[0m | \033[0;36m%12d\033[0m | \033[0;36m%15d\033[0m |\n",
                i + 1,
                processes[i].pid, processes[i].arrival_time,
                processes[i].burst_time, processes[i].turnaround_time,
                processes[i].waiting_time, processes[i].completion_time);
     }
-    printf("|---------|-----|--------------|------------|-----------------|--------------|------z-----------|\n");
-    printf("\nThe average turnaround time is: %.3f\n", (float)total_turnaround / count);
-    printf("The average wait time is: %.3f\n", (float)total_wait / count);
-    printf("The CPU utilization is: %.3f\n", (float)total_burst / time);
-    printf("The throughput is: %.3f processes per milli second\n", (float)count / time);
-    printf("-------------------------------------------------------------------------------------------------------------------------------------\n");
+    
+    printf("|---------|-----|--------------|------------|-----------------|--------------|-----------------|\n");
+    printf("\033[0;32mThe average turnaround time is: %.3f\033[0m\n", (float)total_turnaround / count);
+    printf("\033[0;32mThe average wait time is: %.3f\033[0m\n", (float)total_wait / count);
+    printf("\033[0;32mThe CPU utilization is: %.3f\033[0m\n", (float)total_burst / time);
+    printf("\033[0;32mThe throughput is: %.3f processes per millisecond\033[0m\n", (float)count / time);
+    printf("----------------------------------------------------------------------------------------------------------\n");
 }
