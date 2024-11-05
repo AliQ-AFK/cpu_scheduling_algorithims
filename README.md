@@ -199,7 +199,7 @@ Example:
 To clone the repository and set up the environment:
 
 ```bash
-git clone <https://github.com/AliQ-AFK/cpu_scheduling_algorithims.git>
+git clone https://github.com/AliQ-AFK/cpu_scheduling_algorithims.git
 
 
 Then you can run the program as shown above.
