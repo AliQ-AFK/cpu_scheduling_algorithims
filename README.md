@@ -26,6 +26,7 @@ cpu_scheduling_algorithms/
 │   ├── sjf.c
 │   └── srtf.c
 ├── utils.h
+├──LICENSE
 ├── makefile
 ├── Report.pdf
 └── README.md
