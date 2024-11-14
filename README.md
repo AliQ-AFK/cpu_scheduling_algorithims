@@ -10,7 +10,53 @@ This project implements several process scheduling algorithms in C, allowing use
 6. Shortest Job First (SJF)
 7. Shortest Remaining Time first (SRTF)
 8. A multilevel algorithm.
+## Compilation and Usage
 
+To compile the program, navigate to the project directory and run:
+
+```bash
+make 
+```
+
+You can execute the compiled program with:
+
+```bash
+./cpu_scheduling <postive int>
+```
+to clean comiled files simply run
+```bash
+make clean
+```
+
+## Running the Program
+
+To run the program, use the following command with command-line arguments specifying the number of processes. The program expects only positive integer arguments:
+
+```bash
+./cpu_scheduling <number_of_processes>
+```
+
+Example:
+
+```bash
+./cpu_scheduling 5
+```
+
+> **Note:** Only positive integers should be used for process numbers. Non-positive integers or non-integer inputs will result in an error.
+
+## Cloning the Repository and Setup
+
+To clone the repository and set up the environment:
+
+```bash
+git clone https://github.com/AliQ-AFK/cpu_scheduling_algorithims.git
+```
+
+Then you can run the program as shown above.
+
+### Sample Execution
+
+When you run the program, it will generate random processes and display the results of each scheduling algorithm, including process metrics like turnaround time, waiting time, CPU utilization, and throughput.
 ## Project Structure
 
 ```
@@ -26,6 +72,7 @@ cpu_scheduling_algorithms/
 │   ├── sjf.c
 │   └── srtf.c
 ├── utils.h
+├── LICENSE
 ├── makefile
 ├── Report.pdf
 └── README.md
@@ -160,53 +207,7 @@ Utilizes multiple scheduling queues, each with a distinct algorithm for handling
     - Assigns processes to distinct priority levels, each level using a different algorithm.
     - Allows low-priority processes to defer to higher-priority ones, ideal for systems with a mix of urgent and background tasks.
 
-## Compilation and Usage
 
-To compile the program, navigate to the project directory and run:
-
-```bash
-make 
-```
-
-You can execute the compiled program with:
-
-```bash
-./cpu_scheduling <postive int>
-```
-to clean comiled files simply run
-```bash
-make clean
-```
-
-## Running the Program
-
-To run the program, use the following command with command-line arguments specifying the number of processes. The program expects only positive integer arguments:
-
-```bash
-./cpu_scheduling <number_of_processes>
-```
-
-Example:
-
-```bash
-./cpu_scheduling 5
-```
-
-> **Note:** Only positive integers should be used for process numbers. Non-positive integers or non-integer inputs will result in an error.
-
-## Cloning the Repository and Setup
-
-To clone the repository and set up the environment:
-
-```bash
-git clone https://github.com/AliQ-AFK/cpu_scheduling_algorithims.git
-
-
-Then you can run the program as shown above.
-
-### Sample Execution
-
-When you run the program, it will generate random processes and display the results of each scheduling algorithm, including process metrics like turnaround time, waiting time, CPU utilization, and throughput.
 
 ## Conclusion
 
