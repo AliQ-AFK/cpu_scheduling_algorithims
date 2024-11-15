@@ -1,4 +1,4 @@
-If you learned something new or liked the structure please dokt forget to 🌟 this repository❤️
+If you learned something new or liked the structure please don't forget to 🌟 this repository❤️
 
 
 # Process Scheduling Algorithms in C
