@@ -1,3 +1,5 @@
+If you learned something new or liked the structure please dokt forget to 🌟 this repository❤️
+
 
 # Process Scheduling Algorithms in C
 
